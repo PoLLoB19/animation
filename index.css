@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    position: relative;
+    background-color: rgb(143, 143, 253);
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+
+}
+
+.anima{
+         height: 60vh;
+         width: 20vw;
+         background-color: black;
+         border-radius: 15px;
+         position: relative;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+  
+  overflow: hidden;
+}
+h1{
+  color: rgb(255, 255, 255);
+  z-index: 1;
+}
+.anima::before{
+    content: '';
+    position: absolute;
+    height: 80vh;
+    width: 10vw;
+    background: rgb(238,26,209);
+    background: linear-gradient(360deg, rgba(238,26,209,1) 0%, rgba(0,212,255,1) 30%, rgba(127,226,99,1) 47%, rgb(230, 10, 10) 66%);;
+animation-name: rotate;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+}
+
+.anima::after{
+
+    content: '';
+    position: absolute;
+    inset: 5px;
+    height: 80vh;
+    background-color: black;
+    border-radius: 15px;
+
+}
+
+@keyframes rotate{
+         
+    0%{
+        transform: rotate(0deg);
+    }
+
+100%{
+    transform: rotate(360deg)
+}
+}
