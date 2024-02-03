@@ -7,7 +7,36 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    
+    animation-name: colora;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+
+
+@keyframes colora{
+
+0% {
+    background-color: rgb(143, 143, 253);
+}
+
+20% {
+    background-color: rgb(89, 89, 245);
+}
+
+40% {
+    background-color: rgb(96, 214, 250);
+}
+60% {
+    background-color: rgb(240, 165, 121);
+}
+
+80% {
+    background-color: rgb(221, 126, 126);
+}
+100% {
+    background-color: rgb(236, 149, 229);
+}
 
 }
 
